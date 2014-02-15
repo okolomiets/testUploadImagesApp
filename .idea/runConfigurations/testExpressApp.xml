@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="testExpressApp" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+  <configuration default="false" name="testExpressApp" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" path-to-js-file="app.coffee" working-dir="$PROJECT_DIR$" coffeescript-path="/usr/bin/coffee" coffeescript-run="true">
     <browser start="false" url="http://localhost:3000" with-js-debugger="false" />
     <RunnerSettings RunnerId="NodeJS.run" />
     <ConfigurationWrapper RunnerId="NodeJS.run" />
