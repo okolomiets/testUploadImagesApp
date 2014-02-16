@@ -1,16 +1,30 @@
 util = require("util")
+
+# local files list
+list = []
+
 exports.imageForm = (req, res) ->
   res.render "upload",
-    title: "Upload Images"
+    list: list
 
   return
 
 exports.uploadImage = (req, res, next) ->
-  console.log "file info: ", req.files.image
+  unless req.files.image.size is 0
+    console.log "request info: ", req
 
-  #split the url into an array and then get the last chunk and render it out in the send req.
-  pathArray = req.files.image.path.split("/")
+    pathArray = req.files.image.path.split("/")
+    now = new Date()
+    modidied = now.getDate()+'/'+(now.getMonth()+1)+'/'+now.getFullYear()+' '+now.getHours()+':'+now.getMinutes()
 
-  #, req.files.image
-  res.send util.format(" Task Complete \n uploaded %s (%d Kb) to %s", req.files.image.name, req.files.image.size / 1024 | 0, req.files.image.path, req.body.title, "<img src=\"images/" + pathArray[(pathArray.length - 1)] + "\">")
+    object =
+      path: "images/" + pathArray[(pathArray.length - 1)]
+      title: req.body.title
+      size: req.files.image.size / 1024 | 0
+      modified: modidied
+
+    list.push object
+
+  res.render "upload",
+    list: list
   return

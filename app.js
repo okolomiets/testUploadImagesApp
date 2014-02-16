@@ -56,7 +56,7 @@ Module dependencies.
     app.use(express.errorHandler());
   }
 
-  app.get("/", routes.index);
+  app.get("/", common.imageForm);
 
   app.get("/users", user.list);
 

@@ -1,6 +1,37 @@
 extends layout
 block content
-    form(action="/upload", method="post", enctype="multipart/form-data")
-        input(type="text", name="title")
-        input(type="file", multiple, name="image")
-        button(type="submit", value="Upload") Upload File
+    div.top
+
+    div.container.small
+        div.row
+            div.col-md-6
+                form.form-inline(role="form", action="/upload", method="post", enctype="multipart/form-data")
+                    input.form-control.input-sm(type="text", name="title", placeholder="title")
+                    input.form-control.input-sm(type="file", multiple, name="image")
+                    button.btn.btn-primary.btn-sm(type="submit", value="Upload") Upload
+                div.content
+                    table.table.table-striped.table-condensed
+                        thead
+                            tr
+                                th #
+                                th name
+                                th size, Kb
+                                th modified
+                        tbody
+                            if list.length
+                                each val, index in list
+                                    tr
+                                        td= index+1
+                                        td
+                                            a(href='#{val.path}') #{val.title}
+                                        td= val.size
+                                        td= val.modified
+                            else
+                                tr
+                                    td
+                                    td
+                                    td
+                                    td
+
+
+    div.footer
