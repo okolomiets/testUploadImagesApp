@@ -5,13 +5,11 @@ Module dependencies.
  */
 
 (function() {
-  var app, common, express, fs, http, path, routes, user, util;
+  var app, common, express, fs, http, path, routes, util;
 
   express = require("express");
 
   routes = require("./routes");
-
-  user = require("./routes/user");
 
   common = require("./routes/common");
 
@@ -57,8 +55,6 @@ Module dependencies.
   }
 
   app.get("/", common.imageForm);
-
-  app.get("/users", user.list);
 
   app.get("/upload", common.imageForm);
 

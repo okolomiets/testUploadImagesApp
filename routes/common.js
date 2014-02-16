@@ -13,12 +13,19 @@
   };
 
   exports.uploadImage = function(req, res, next) {
-    var modidied, now, object, pathArray;
-    if (req.files.image.size !== 0) {
+    var fixDate, modidied, now, object, pathArray;
+    if (!(req.files.image.size === 0 || req.body.title === '')) {
       console.log("request info: ", req);
       pathArray = req.files.image.path.split("/");
       now = new Date();
-      modidied = now.getDate() + '/' + (now.getMonth() + 1) + '/' + now.getFullYear() + ' ' + now.getHours() + ':' + now.getMinutes();
+      fixDate = function(d) {
+        if (d < 10) {
+          return "0" + d;
+        } else {
+          return d;
+        }
+      };
+      modidied = fixDate(now.getDate()) + '/' + fixDate(now.getMonth() + 1) + '/' + now.getFullYear() + ' ' + fixDate(now.getHours()) + ':' + fixDate(now.getMinutes());
       object = {
         path: "images/" + pathArray[pathArray.length - 1],
         title: req.body.title,

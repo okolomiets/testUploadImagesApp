@@ -10,12 +10,14 @@ exports.imageForm = (req, res) ->
   return
 
 exports.uploadImage = (req, res, next) ->
-  unless req.files.image.size is 0
+  unless req.files.image.size is 0 or req.body.title is ''
     console.log "request info: ", req
 
     pathArray = req.files.image.path.split("/")
     now = new Date()
-    modidied = now.getDate()+'/'+(now.getMonth()+1)+'/'+now.getFullYear()+' '+now.getHours()+':'+now.getMinutes()
+    fixDate = (d) ->
+      (if d < 10 then "0" + d else d)
+    modidied = fixDate(now.getDate())+'/'+fixDate(now.getMonth()+1)+'/'+now.getFullYear()+' '+fixDate(now.getHours())+':'+fixDate(now.getMinutes())
 
     object =
       path: "images/" + pathArray[(pathArray.length - 1)]

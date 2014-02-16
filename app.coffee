@@ -4,7 +4,7 @@ Module dependencies.
 ###
 express = require("express")
 routes = require("./routes")
-user = require("./routes/user")
+#user = require("./routes/user")
 common = require("./routes/common")
 fs = require("fs")
 http = require("http")
@@ -32,7 +32,7 @@ app.use express.static(path.join(__dirname, "public"))
 # development only
 app.use express.errorHandler()  if "development" is app.get("env")
 app.get "/", common.imageForm # routes.index
-app.get "/users", user.list
+#app.get "/users", user.list
 
 #File upload
 app.get "/upload", common.imageForm

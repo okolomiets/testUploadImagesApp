@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81b490f1-1a4e-4b04-918b-bd266a1727ea" name="Default" comment="Implemented coffee-script support&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Node_js_Dependencies_for_testExpressApp.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.coffee" afterPath="$PROJECT_DIR$/app.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.map" afterPath="$PROJECT_DIR$/app.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/common.coffee" afterPath="$PROJECT_DIR$/routes/common.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/common.js" afterPath="$PROJECT_DIR$/routes/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/common.map" afterPath="$PROJECT_DIR$/routes/common.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testExpressApp.iml" afterPath="$PROJECT_DIR$/.idea/testExpressApp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/upload.jade" afterPath="$PROJECT_DIR$/views/upload.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,19 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="8" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+            <state line="11" column="22" selection-start="244" selection-end="244" vertical-scroll-proportion="0.41878173" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -68,16 +53,16 @@
       <file leaf-file-name="common.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/common.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="525">
+            <state line="25" column="24" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upload.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/upload.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.3426396" vertical-offset="0" max-vertical-offset="630">
+            <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -337,13 +322,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-3" width="1319" height="776" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22067901" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22067901" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -514,9 +499,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+    <entry file="file://$PROJECT_DIR$/routes/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="8" column="8" selection-start="106" selection-end="106" vertical-scroll-proportion="0.30456853" vertical-offset="0" max-vertical-offset="394">
           <folding />
         </state>
       </provider>
@@ -528,30 +513,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.coffee">
+    <entry file="file://$PROJECT_DIR$/views/upload.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="735">
+        <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.coffee">
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+        <state line="10" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/common.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="525">
+        <state line="25" column="24" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/upload.jade">
+    <entry file="file://$PROJECT_DIR$/app.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.3426396" vertical-offset="0" max-vertical-offset="630">
+        <state line="11" column="22" selection-start="244" selection-end="244" vertical-scroll-proportion="0.41878173" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
