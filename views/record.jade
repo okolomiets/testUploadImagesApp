@@ -1,0 +1,12 @@
+extends layout
+block content
+	div.container.small
+        div.row
+            div.col-md-6
+            	div.thumbnail
+            		img.img-thumbnail(data-src='#{object.path}', width='480', height='350')
+            		div.caption
+            			h5= object.title
+            			a.btn.btn-danger.btn-sm(href='/record/delete/#{id}', role='button') Delete
+            			a.btn.btn-default.btn-sm(href='/upload', role='button') Cancel
+

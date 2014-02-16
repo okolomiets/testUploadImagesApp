@@ -1,4 +1,5 @@
 util = require("util")
+fs = require("fs")
 
 # local files list
 list = []
@@ -20,6 +21,7 @@ exports.uploadImage = (req, res, next) ->
     modidied = fixDate(now.getDate())+'/'+fixDate(now.getMonth()+1)+'/'+now.getFullYear()+' '+fixDate(now.getHours())+':'+fixDate(now.getMinutes())
 
     object =
+      full_path: req.files.image.path
       path: "images/" + pathArray[(pathArray.length - 1)]
       title: req.body.title
       size: req.files.image.size / 1024 | 0
@@ -30,3 +32,26 @@ exports.uploadImage = (req, res, next) ->
   res.render "upload",
     list: list
   return
+
+exports.getImage = (req, res) ->
+  id = req.params.id
+  record = list[id]
+  res.render "record",
+    id: id
+    object: record
+
+  return
+
+exports.deleteImage = (req, res) ->
+  id = req.params.id
+  full_path = list[id].full_path
+  fs.unlink full_path, (err) ->
+    throw err  if err
+    console.log "successfully deleted " + full_path
+    return
+  delete list[id]
+  res.render "upload",
+    list: list
+
+  return
+

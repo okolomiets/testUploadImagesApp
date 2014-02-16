@@ -34,9 +34,12 @@ app.use express.errorHandler()  if "development" is app.get("env")
 app.get "/", common.imageForm # routes.index
 #app.get "/users", user.list
 
-#File upload
 app.get "/upload", common.imageForm
 app.post "/upload", common.uploadImage
+#CRUD
+app.get "/image/:id", common.getImage
+#app.get "/image/update/:id", common.updateImage
+app.get "/image/delete/:id", common.deleteImage
 
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
