@@ -12,7 +12,7 @@ exports.imageForm = (req, res) ->
 
 exports.uploadImage = (req, res, next) ->
   unless req.files.image.size is 0 or req.body.title is ''
-    console.log "request info: ", req
+    #console.log "request info: ", req
 
     pathArray = req.files.image.path.split("/")
     now = new Date()
@@ -35,7 +35,7 @@ exports.uploadImage = (req, res, next) ->
 
 exports.getImage = (req, res) ->
   id = req.params.id
-  record = list[id]
+  record = list[id-1]
   res.render "record",
     id: id
     object: record
@@ -43,15 +43,16 @@ exports.getImage = (req, res) ->
   return
 
 exports.deleteImage = (req, res) ->
-  id = req.params.id
+  id = req.params.id-1
   full_path = list[id].full_path
   fs.unlink full_path, (err) ->
     throw err  if err
     console.log "successfully deleted " + full_path
     return
-  delete list[id]
-  res.render "upload",
-    list: list
+  list.splice id, 1
+  res.redirect "/upload"
+#  res.render "upload",
+#    list: list
 
   return
 
