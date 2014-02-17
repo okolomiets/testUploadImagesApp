@@ -3,10 +3,12 @@ block content
     div.container.small
         div.row
             div.col-md-6
-                form.form-inline(role="form", action="/upload", method="post", enctype="multipart/form-data")
-                    input.form-control.input-sm(type="text", name="title", placeholder="title")
-                    input.form-control.input-sm(type="file", multiple, name="image")
+                form.form-inline(role="form", action="/upload", method="post", enctype="multipart/form-data", id="upload_form")
+                    input.form-control.input-sm(type="text", name="title", placeholder="title", id="title")
+                    input.form-control.input-sm(type="file", multiple, name="image", id="image")
                     button.btn.btn-primary.btn-sm(type="submit", value="Upload") Upload
+        div.row
+            div.col-md-5
                 div.content
                     table.table.table-striped.table-condensed
                         thead
